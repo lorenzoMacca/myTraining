@@ -1,0 +1,75 @@
+#nav {
+    margin:0; 
+    padding:0; 
+    list-style:none;
+}	
+
+#nav li {
+    float:left; 
+    display:block; 
+    width:100px; 
+    background:#a452c6; 
+    position:relative;
+    z-index:500; 
+    margin:0 1px;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+#nav li.first {
+    border-radius:5px 0 0 5px;
+    -moz-border-radius:5px 0 0 5px;
+}
+#nav li.last {
+    border-radius:0 5px 5px 0;
+    -moz-border-radius:0 5px 5px 0;
+}
+#nav li li.last {
+    border-radius:0 0 5px 5px;
+    -moz-border-radius:0 0 5px 5px;
+}
+#nav li a {
+    display:block; 
+    padding:8px 5px 0 5px; 
+    font-weight:700;  
+    height:23px; 
+    text-decoration:none; 
+    text-align:center; 
+    color:#333;
+}
+
+#nav li a:hover {
+    color:yellow;
+}
+#nav li li:hover {
+    -webkit-transform: translate(+10px,0);
+}
+
+#nav a.selected {
+    /*color:white;*/
+}
+
+#nav ul {
+    position:absolute; 
+    left:0; 
+    display:none; 
+    margin:0 0 0 -1px; 
+    padding:0; 
+    list-style:none;
+}
+
+#nav ul li {
+    width:100px; 
+    float:left; 
+    border-top:1px solid #fff;
+}
+
+#nav ul a {
+    display:block;  
+    height:auto;
+    padding: 8px 5px; 
+    color:#666;
+}
+/* fix ie6, meglio inserirlo in un file .css separato */
+*html #nav ul {
+    margin:0 0 0 -2px;
+}
+
