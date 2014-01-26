@@ -224,3 +224,7 @@
 [ DATA:2014-1-26 10:18:24 - USER:system - ID:-1 ] : initialize session variable to initialvalue
 [ DATA:2014-1-26 10:24:28 - USER:system - ID:-1 ] : construct initSession
 [ DATA:2014-1-26 10:24:28 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-1-26 20:48:52 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-1-26 20:48:52 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-1-26 20:57:0 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-1-26 20:57:0 - USER:system - ID:-1 ] : initialize session variable to initialvalue
