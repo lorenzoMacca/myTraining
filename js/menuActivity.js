@@ -204,7 +204,7 @@ function toInsertSpinningTraining() {
         STATE = 'INSERT_SPINNING_TRAINING';
 
         /**/
-        $("[id=center]").load("./insertSpinningTraining.php");
+        $("[id=center]").load("./InsertSpinningTraining.php");
     }
 }
 
