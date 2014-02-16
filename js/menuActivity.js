@@ -28,6 +28,39 @@ function doLogin(username, password) {
     });
 }
 
+function sendSpinningTrainingdataToServer(dataGym, hour, duration, bpm, time, weather){
+    var dataExpression = /[0-9][0-9][/][0-9][0-9][/][0-9][0-9][0-9][0-9]/;
+    if(!dataExpression.test(dataGym)){
+        alert('check the data!!!');
+        return;
+    }
+
+    //validate hour input before to send 
+    var expression = /[0-2][0-9]:[0-5][0-9]/;
+    if(!expression.test(hour)){
+        alert('check the hour!!!');
+        return;
+    }
+    
+    $.ajax("./manageSpinningTraining.php", {
+        data: {
+            req: "sendSpinningTrainingData",
+            dataGym:dataGym,
+            hour:hour,
+            duration:duration,
+            bpm:bpm,
+            time:time,
+            weather:weather
+        },
+        type: "POST"
+    }).done(function(msg) {
+        alert(msg);
+        /*userJSON = JSON.parse(msg);
+        alert(userJSON.result);
+        toHOME();*/
+    });
+}
+
 function sendRunningTrainingdataToServer( dataGym, hour, duration, shoes, path, bpm, time, weather){
     //alert(''+dataGym+' '+hour+' '+duration+' '+path+' '+shoes+' '+bpm+' '+time);
     

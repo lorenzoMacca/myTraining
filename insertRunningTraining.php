@@ -20,7 +20,7 @@ include './RunningTraining.php';
 
         <table>
             <tr>
-                <td><img src="images/icon/distance.png" /></td>
+                <!--<td><img src="images/icon/distance.png" /></td>-->
                 <td>
                     <select id="path">
                         <?php
@@ -31,7 +31,7 @@ include './RunningTraining.php';
                         ?>
                     </select>
                 </td>    
-                <td><img src="images/icon/shoes.png" /></td>
+                <!--<td><img src="images/icon/shoes.png" /></td>-->
                 <td>
                     <select id="shoes">
                         <?php
@@ -45,9 +45,9 @@ include './RunningTraining.php';
                 </td>
             </tr>
             <tr>
-                <td><img src="images/icon/bpm.png" /></td>
+                <!--<td><img src="images/icon/bpm.png" /></td>-->
                 <td><input type="number" id="bpm" placeholder="bmp"/></td>
-                <td><img src="images/icon/time.png" /></td>
+                <!--<td><img src="images/icon/time.png" /></td>-->
                 <td><input type="number" id="time" placeholder="time"/></td>
             </tr>
         </table>

@@ -2,7 +2,7 @@
 
 ?>
 
-<div id="insertRunningWorkoutContainer">
+<div id="insertSpinningWorkoutContainer">
 
     <div id="addActivityMetadata">
         <div id="dataInsertWorkout">
@@ -16,8 +16,19 @@
         </div>
     </div>
 
-    <div id="runningContentdata">
-
+    <div id="spinningContentData">  
+        <table>
+            <tr>
+                <td>
+                    <input type="number" id="spinningTime" placeholder="TIME" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="spinningBpm" placeholder="BPM" />
+                </td>
+            </tr>
+        </table>
         
     </div>
 
@@ -30,6 +41,14 @@
         $("#datepicker").datepicker();
     });
 
-    
+    $('[id=sendSpinningTraining]').click(function() {
+        dataActivity = $('[id=datepicker]').val();
+        hourGym = $('[id=hourGym]').val();
+        durationGym = $('[id=durationGym]').val();
+        bpm = $('[id=spinningBpm]').val();
+        time = $('[id=spinningTime]').val();
+       /* dataGym, hour, duration, shoes, path, bpm, time, weather*/
+        sendSpinningTrainingdataToServer(dataActivity, hourGym, durationGym, bpm, time, 1);
+    });
 </script>
 

@@ -124,7 +124,25 @@ nav{
     margin-top: 70px;
 }
 
+#spinningContentData{
+    margin-top: 50px;
+}
+
 #insertRunningWorkoutContainer{
+    width: 600px;
+    margin-left: 350px;
+    margin-top: 30px;
+    padding: 20px 20px 20px 20px;
+    border: thick solid ;
+    border-color: #9828c6;
+    border-radius: 10px;
+    border-width: 2px;
+    /*background: white;*/
+    /*opacity:0.3;*/
+    background-color: rgba(255,255,255,0.4);
+}
+
+#insertSpinningWorkoutContainer{
     width: 600px;
     margin-left: 350px;
     margin-top: 30px;
@@ -174,19 +192,19 @@ nav{
 }
 
 #shoes{
-    height: 37px;
+    /*height: 37px;*/
     margin-top: 0px;
 }
 #path{
-    height: 37px;
+   /* height: 37px;*/
     margin-top: 0px;
 }
 #bpm{
-    height: 30px;
+   /* height: 30px;*/
     margin-top: 0px;
 }
 #time{
-    height: 30px;
+   /* height: 30px;*/
     margin-top: 0px;
 }
 
