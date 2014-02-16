@@ -29,6 +29,33 @@ class SpinningTraining {
     }
     
     
+    public static function getSpinningTrainingFromActivityDB($activityID) {
+        DataBaseConnection::getDBConnectionInstance();
+        $query = 'select spi.bpm, spi.`time` 
+                    from spinning_training as spi 
+                        where spi.activity_id = ' . $activityID . '
+                            ;';
+        $result = mysql_query($query);
+        if (!$result) {
+            die('Invalid query: ' . mysql_error());
+        }
+
+        $SPinningTrainingArray = array();
+        $i = 0;
+        while ($row = mysql_fetch_row($result)) {
+            $SPinningTrainingArray[$i] = new SpinningTraining($row[0], $row[1]);
+            $i++;
+        }
+
+        return $SPinningTrainingArray;
+    }
+    
+    
+    public function __toString() {
+        return '{ "bpm" :"' . $this->bpm . '","time" :"' . $this->time . '"}';
+    }
+    
+    
     /**
      * 
      * @param type $activity    --> [user_id, activity_data, activity_hour, training_time, weather_id]

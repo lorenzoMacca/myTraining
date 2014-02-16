@@ -54,10 +54,10 @@ function sendSpinningTrainingdataToServer(dataGym, hour, duration, bpm, time, we
         },
         type: "POST"
     }).done(function(msg) {
-        alert(msg);
-        /*userJSON = JSON.parse(msg);
+        //alert(msg);
+        userJSON = JSON.parse(msg);
         alert(userJSON.result);
-        toHOME();*/
+        toHOME();
     });
 }
 
@@ -202,6 +202,19 @@ function getGymTraining(activityId, id, type) {
             code += '</tr>';
             code += '</table>';
 
+            $("[id=gymTrainingContent" + id + "]").html(code).show(400);
+            $('[id=tableRunTraining]').css("border-collapse", "collapse").css("border-color", "#9828c6").css("margin-bottom", "10px");
+        } else if (type === 'spi'){
+            var code = '<table border="2" id="tableRunTraining" >';
+            code += '<tr class="a">';
+            code += '<td>TIME</td>';
+            code += '<td>' + gymTriningsJSON.spinningtrainings[0].time + '</td>';
+            code += '</tr>';
+            code += '<tr class="b">';
+            code += '<td>BPM</td>';
+            code += '<td>' + gymTriningsJSON.spinningtrainings[0].bpm + '</td>';
+            code += '</tr>';
+            code += '</table>';
             $("[id=gymTrainingContent" + id + "]").html(code).show(400);
             $('[id=tableRunTraining]').css("border-collapse", "collapse").css("border-color", "#9828c6").css("margin-bottom", "10px");
         }

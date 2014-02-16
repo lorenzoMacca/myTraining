@@ -7,6 +7,7 @@
 
 include './GymTraining.php';
 include './RunningTraining.php';
+include './SpinningTraining.php';
 
 $req = $_GET["req"];
 $activityId = $_GET["activityId"];
@@ -29,6 +30,16 @@ if ($req === 'getTraining') {
         for ($i = 0; $i < count($runningTraining); $i++) {
             echo $runningTraining [$i];
             if ($i != count($runningTraining) - 1) {
+                echo ',';
+            }
+        }
+        echo ']}';
+    } else if($type == 'spi'){
+        $spinningTraining = SpinningTraining::getSpinningTrainingFromActivityDB($activityId);
+        echo '{"spinningtrainings":[';
+        for ($i = 0; $i < count($spinningTraining); $i++) {
+            echo $spinningTraining [$i];
+            if ($i != count($spinningTraining) - 1) {
                 echo ',';
             }
         }
