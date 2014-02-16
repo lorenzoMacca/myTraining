@@ -48,7 +48,7 @@
         bpm = $('[id=spinningBpm]').val();
         time = $('[id=spinningTime]').val();
        /* dataGym, hour, duration, shoes, path, bpm, time, weather*/
-        sendSpinningTrainingdataToServer(dataActivity, hourGym, durationGym, bpm, time, 1);
+        sendSpinningTrainingdataToServer(dataActivity, hourGym, durationGym, bpm, time, 7);
     });
 </script>
 
