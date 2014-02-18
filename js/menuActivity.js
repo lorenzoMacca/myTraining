@@ -28,29 +28,29 @@ function doLogin(username, password) {
     });
 }
 
-function sendSpinningTrainingdataToServer(dataGym, hour, duration, bpm, time, weather){
+function sendSpinningTrainingdataToServer(dataGym, hour, duration, bpm, time, weather) {
     var dataExpression = /[0-9][0-9][/][0-9][0-9][/][0-9][0-9][0-9][0-9]/;
-    if(!dataExpression.test(dataGym)){
+    if (!dataExpression.test(dataGym)) {
         alert('check the data!!!');
         return;
     }
 
     //validate hour input before to send 
     var expression = /[0-2][0-9]:[0-5][0-9]/;
-    if(!expression.test(hour)){
+    if (!expression.test(hour)) {
         alert('check the hour!!!');
         return;
     }
-    
+
     $.ajax("./manageSpinningTraining.php", {
         data: {
             req: "sendSpinningTrainingData",
-            dataGym:dataGym,
-            hour:hour,
-            duration:duration,
-            bpm:bpm,
-            time:time,
-            weather:weather
+            dataGym: dataGym,
+            hour: hour,
+            duration: duration,
+            bpm: bpm,
+            time: time,
+            weather: weather
         },
         type: "POST"
     }).done(function(msg) {
@@ -61,34 +61,34 @@ function sendSpinningTrainingdataToServer(dataGym, hour, duration, bpm, time, we
     });
 }
 
-function sendRunningTrainingdataToServer( dataGym, hour, duration, shoes, path, bpm, time, weather){
+function sendRunningTrainingdataToServer(dataGym, hour, duration, shoes, path, bpm, time, weather) {
     //alert(''+dataGym+' '+hour+' '+duration+' '+path+' '+shoes+' '+bpm+' '+time);
-    
-     //validate data input before to send
+
+    //validate data input before to send
     var dataExpression = /[0-9][0-9][/][0-9][0-9][/][0-9][0-9][0-9][0-9]/;
-    if(!dataExpression.test(dataGym)){
+    if (!dataExpression.test(dataGym)) {
         alert('check the data!!!');
         return;
     }
 
     //validate hour input before to send 
     var expression = /[0-2][0-9]:[0-5][0-9]/;
-    if(!expression.test(hour)){
+    if (!expression.test(hour)) {
         alert('check the hour!!!');
         return;
     }
-    
+
     $.ajax("./manageRunningTraining.php", {
         data: {
             req: "sendRunningTrainingData",
-            dataGym:dataGym,
-            hour:hour,
-            duration:duration,
-            shoes:shoes,
-            path:path,
-            bpm:bpm,
-            time:time,
-            weather:weather
+            dataGym: dataGym,
+            hour: hour,
+            duration: duration,
+            shoes: shoes,
+            path: path,
+            bpm: bpm,
+            time: time,
+            weather: weather
         },
         type: "POST"
     }).done(function(msg) {
@@ -99,30 +99,30 @@ function sendRunningTrainingdataToServer( dataGym, hour, duration, shoes, path, 
     });
 }
 
-function sendGymTrainingDataToServer(gymtrainingData, dataGym, hour, duration, weight){
-    
+function sendGymTrainingDataToServer(gymtrainingData, dataGym, hour, duration, weight) {
+
     //validate data input before to send
     var dataExpression = /[0-9][0-9][/][0-9][0-9][/][0-9][0-9][0-9][0-9]/;
-    if(!dataExpression.test(dataGym)){
+    if (!dataExpression.test(dataGym)) {
         alert('check the data!!!');
         return;
     }
 
     //validate hour input before to send 
     var expression = /[0-2][0-9]:[0-5][0-9]/;
-    if(!expression.test(hour)){
+    if (!expression.test(hour)) {
         alert('check the hour!!!');
         return;
     }
 
-     $.ajax("./manageGymTraining.php", {
+    $.ajax("./manageGymTraining.php", {
         data: {
             req: "sendGymTrainingData",
             gymtrainingData: gymtrainingData,
-            dataGym:dataGym,
-            hour:hour,
-            duration:duration,
-            weight:weight
+            dataGym: dataGym,
+            hour: hour,
+            duration: duration,
+            weight: weight
         },
         type: "POST"
     }).done(function(msg) {
@@ -202,9 +202,14 @@ function getGymTraining(activityId, id, type) {
             code += '</tr>';
             code += '</table>';
 
+            /*INSERT GOOGLE MAP*/
+            
+            code += '<div id="map-canvas" style="width: 100%; height: 200px">MAPPA</div>';
+            loadScript();
+            
             $("[id=gymTrainingContent" + id + "]").html(code).show(400);
             $('[id=tableRunTraining]').css("border-collapse", "collapse").css("border-color", "#9828c6").css("margin-bottom", "10px");
-        } else if (type === 'spi'){
+        } else if (type === 'spi') {
             var code = '<table border="2" id="tableRunTraining" >';
             code += '<tr class="a">';
             code += '<td>TIME</td>';
@@ -215,6 +220,8 @@ function getGymTraining(activityId, id, type) {
             code += '<td>' + gymTriningsJSON.spinningtrainings[0].bpm + '</td>';
             code += '</tr>';
             code += '</table>';
+            
+            
             $("[id=gymTrainingContent" + id + "]").html(code).show(400);
             $('[id=tableRunTraining]').css("border-collapse", "collapse").css("border-color", "#9828c6").css("margin-bottom", "10px");
         }
@@ -264,4 +271,22 @@ function toHOME() {
         /**/
         $("[id=center]").load("./menuPage.php");
     }
+}
+
+function initialize() {
+    var mapOptions = {
+        zoom: 8,
+        center: new google.maps.LatLng(-34.397, 150.644)
+    };
+
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+}
+
+function loadScript(id) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+            'callback=initialize';
+    document.body.appendChild(script);
 }

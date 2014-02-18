@@ -21,6 +21,12 @@
 
         <script src="js/menuActivity.js" ></script>
         <title>My Training</title>
+        
+        <!--<style type="text/css">
+            html { height: 100% }
+            body { height: 100%; margin: 0; padding: 0 }
+            #map-canvas { height: 100% }
+        </style>-->
     </head>
     <body>
         <script>
