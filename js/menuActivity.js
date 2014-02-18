@@ -228,6 +228,11 @@ function getGymTraining(activityId, id, type) {
     });
 }
 
+
+function closeTraining(activityId, id, type) {
+     $("[id=gymTrainingContent" + id + "]").html('');
+}
+
 function toInsertWorkout() {
 
     if (STATE !== 'LOGIN') {
@@ -283,7 +288,7 @@ function initialize() {
             mapOptions);
 }
 
-function loadScript(id) {
+function loadScript() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +

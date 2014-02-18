@@ -87,6 +87,7 @@
                         }else{
                              $("[id=gymTrainingContent'.$i.']").css("display","none");
                              /*$("[id=activity'.$i.']").css("height","27px");*/
+                                 closeTraining('.$activities[$i]->getId().', '.$i.',"'.$activities[$i]->getTrainingType().'");   
                             activitiesId['.$i.']="0"; 
                         }
                     });';
