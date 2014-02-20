@@ -20,6 +20,10 @@
         <!-- END DATA PICKER -->
 
         <script src="js/menuActivity.js" ></script>
+        
+        <!-- GOOGLE_MAP_API-->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script src="js/calcolateRouteGoogleMap.js"></script>
         <title>My Training</title>
         
         <!--<style type="text/css">

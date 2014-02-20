@@ -204,12 +204,14 @@ function getGymTraining(activityId, id, type) {
 
             /*INSERT GOOGLE MAP*/
             
-            code += '<div id="map-canvas" style="width: 100%; height: 200px">MAPPA</div>';
-            loadScript();
+            code += '<div id="map-canvas" style="width: 575px; height: 300px">MAPPA</div>';
+            
             
             $("[id=gymTrainingContent" + id + "]").html(code).show(400);
             $('[id=tableRunTraining]').css("border-collapse", "collapse").css("border-color", "#9828c6").css("margin-bottom", "10px");
-        } else if (type === 'spi') {
+            initialize();
+            calcRoute();
+    } else if (type === 'spi') {
             var code = '<table border="2" id="tableRunTraining" >';
             code += '<tr class="a">';
             code += '<td>TIME</td>';
@@ -288,10 +290,32 @@ function initialize() {
             mapOptions);
 }
 
-function loadScript() {
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-            'callback=initialize';
-    document.body.appendChild(script);
+
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+var map;
+
+function initialize() {
+    directionsDisplay = new google.maps.DirectionsRenderer();
+    //var chicago = new google.maps.LatLng(41.850033, -87.6500523);
+    var mapOptions = {
+        zoom: 7
+    };
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    directionsDisplay.setMap(map);
+}
+
+function calcRoute() {
+    var start = 'san pietro in guarano';//= document.getElementById('start').value;
+    var end = 'spezzano sila';//document.getElementById('end').value;
+    var request = {
+        origin: start,
+        destination: end,
+        travelMode: google.maps.TravelMode.DRIVING
+    };
+    directionsService.route(request, function(response, status) {
+        if (status === google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+        }
+    });
 }
