@@ -280,16 +280,6 @@ function toHOME() {
     }
 }
 
-function initialize() {
-    var mapOptions = {
-        zoom: 8,
-        center: new google.maps.LatLng(-34.397, 150.644)
-    };
-
-    var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-}
-
 
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
@@ -313,6 +303,7 @@ function calcRoute() {
         destination: end,
         travelMode: google.maps.TravelMode.DRIVING
     };
+    directionsService = new google.maps.DirectionsService();
     directionsService.route(request, function(response, status) {
         if (status === google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(response);

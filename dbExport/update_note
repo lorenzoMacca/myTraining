@@ -1,2 +1,5 @@
 ALTER TABLE `mytraining`.`running_path` 
 ADD COLUMN `coordinates_start` VARCHAR(45) NULL  AFTER `description` , ADD COLUMN `coordinates_end` VARCHAR(45) NULL  AFTER `coordinates_start` ;
+
+UPDATE `mytraining`.`running_path` SET `coordinates_start`='39.341226,16.31346', `coordinates_end`='39.320064,16.307046' WHERE `id`='1';
+
