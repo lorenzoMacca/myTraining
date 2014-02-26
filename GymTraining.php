@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 
-include './DataBaseConnection.php';
+include_once './DataBaseConnection.php';
 
 /**
  * Description of GymTraining

@@ -16,19 +16,23 @@
 
     <div id="select_BB_card">
         <select>
+            <option name="null">Select a BB CARD</option>
             <?php
-                include './BBCard.php';
-                $cards = BBCard::getCardsFromDB(1);
-                for( $i = 0; count($cards); $i++ ){
-                    echo '<option name="'.$cards[$i]->getName().'">'.$cards[$i]->getName().'</option>';
-                }
+            include './BBCard.php';
+            $cards = BBCard::getCardsFromDB(1);
+            for ($i = 0; $i < count($cards); $i++) {
+                $name = $cards[$i]->getName();
+                echo '<option name="' . $name . '">' . $name . '</option>';
+            }
             ?>
         </select>
-             
     </div>
 
     <div id="example" class="handsontable"></div>
+
     <button id="sendWorkout">SEND WORKOUT</button>
+
+
 </div>
 
 
@@ -88,7 +92,7 @@ echo '];';
             dataActivity = $('[id=datepicker]').val();
             hourGym = $('[id=hourGym]').val();
             durationGym = $('[id=durationGym]').val();
-            sendGymTrainingDataToServer(data,dataActivity, hourGym, durationGym,1);
+            sendGymTrainingDataToServer(data, dataActivity, hourGym, durationGym, 1);
         });
 
         $(function() {
@@ -97,3 +101,4 @@ echo '];';
 
     });
 </script>
+
