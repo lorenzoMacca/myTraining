@@ -1,7 +1,12 @@
-allenamento 20140225 13:00
-trazioni  10-10-8
-lat machine 10-8-8 90
-tirate al mento 7-6-7 35-35-32
-leg curl 12-10-10 55
-curl 6-5-5 30
+INSERT INTO `mytraining`.`equipment` (`name_equipment`) VALUES ('machine');
 
+INSERT INTO `mytraining`.`gym_exsercise` (`exsercise_name`, `description`, `part_of_body_id`, `equipment_id`) VALUES ('Curl bilanciere curvo', '', '1', '6');
+INSERT INTO `mytraining`.`gym_exsercise` (`exsercise_name`, `part_of_body_id`, `equipment_id`) VALUES ('Leg curl ', '2', '6');
+INSERT INTO `mytraining`.`gym_exsercise` (`exsercise_name`, `part_of_body_id`, `equipment_id`) VALUES ('Lento avanti multipower', '2', '6');
+
+UPDATE `mytraining`.`gym_exsercise` SET `exsercise_name`='Panca Piana' WHERE `id`='1';
+UPDATE `mytraining`.`gym_exsercise` SET `exsercise_name`='Military Press' WHERE `id`='2';
+UPDATE `mytraining`.`gym_exsercise` SET `exsercise_name`='Trazioni' WHERE `id`='3';
+
+
+UPDATE `mytraining`.`gym_exsercise` SET `exsercise_name`='Panca Alta' WHERE `id`='18';
