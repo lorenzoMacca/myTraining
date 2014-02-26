@@ -10,3 +10,57 @@ UPDATE `mytraining`.`gym_exsercise` SET `exsercise_name`='Trazioni' WHERE `id`='
 
 
 UPDATE `mytraining`.`gym_exsercise` SET `exsercise_name`='Panca Alta' WHERE `id`='18';
+
+CREATE  TABLE `mytraining`.`BB_card` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `user_id` INT(11) UNSIGNED NOT NULL ,
+  `name` VARCHAR(45) NOT NULL ,
+  `date_create` DATETIME NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_BB_card_1_idx` (`user_id` ASC) ,
+  CONSTRAINT `fk_BB_card_1`
+    FOREIGN KEY (`user_id` )
+    REFERENCES `mytraining`.`user` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+ALTER TABLE `mytraining`.`BB_card` ADD COLUMN `number_of_day` INT(1) NOT NULL  AFTER `date_create` ;
+
+
+CREATE  TABLE `mytraining`.`exercise_card` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `BB_card_id` INT(11) NOT NULL ,
+  `exercise_id` INT(11) NOT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_exercise_card_1_idx` (`BB_card_id` ASC) ,
+  INDEX `fk_exercise_card_2_idx` (`exercise_id` ASC) ,
+  CONSTRAINT `fk_exercise_card_1`
+    FOREIGN KEY (`BB_card_id` )
+    REFERENCES `mytraining`.`BB_card` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_exercise_card_2`
+    FOREIGN KEY (`exercise_id` )
+    REFERENCES `mytraining`.`gym_exsercise` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+ALTER TABLE `mytraining`.`exercise_card` ADD COLUMN `day` VARCHAR(1) NOT NULL DEFAULT 'A'  AFTER `exercise_id` ;
+
+INSERT INTO `mytraining`.`BB_card` (`user_id`, `name`, `date_create`, `number_of_day`) VALUES ('1', 'FORZA_MASSA_MULTIFREQUENZA_AB', '2014-02-01 00:00:00', '2');
+
+ALTER TABLE `mytraining`.`exercise_card` ADD COLUMN `series` INT(2) NOT NULL  AFTER `day` ;
+
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '1', 'A','4');
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '18', 'A','3');
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '31', 'A','4');
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '24', 'A','4');
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '25', 'A','3');
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '6', 'A','3');
+
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '3', 'B', '4');
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '26', 'B', '3');
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '28', 'B', '3');
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '30', 'B', '4');
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '27', 'B', '4');
+INSERT INTO `mytraining`.`exercise_card` (`BB_card_id`, `exercise_id`, `day`, `series`) VALUES ('2', '29', 'B', '3');
