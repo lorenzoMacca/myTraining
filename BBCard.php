@@ -40,7 +40,7 @@ class BBCard {
         $this->data = $data;
     }
 
-    public static function getActivityFromDB($userID){
+    public static function getCardsFromDB($userID){
         DataBaseConnection::getDBConnectionInstance();
         $query = 'SELECT bb.name, date(bb.date_create)
                     FROM mytraining.BB_card bb

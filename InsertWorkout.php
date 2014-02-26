@@ -17,11 +17,10 @@
     <div id="select_BB_card">
         <select>
             <?php
-                include_once './BBCard.php';
-                $cards = BBCard::getActivityFromDB(1);
+                include './BBCard.php';
+                $cards = BBCard::getCardsFromDB(1);
                 for( $i = 0; count($cards); $i++ ){
-                   // echo '<option name="'.$cards[$i].name.'">'.$cards[$i].name.'</option>';
-                    echo '<option name="A">A</option>';
+                    echo '<option name="'.$cards[$i]->getName().'">'.$cards[$i]->getName().'</option>';
                 }
             ?>
         </select>
