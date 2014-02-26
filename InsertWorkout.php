@@ -14,6 +14,20 @@
         </div>
     </div>
 
+    <div id="select_BB_card">
+        <select>
+            <?php
+                include_once './BBCard.php';
+                $cards = BBCard::getActivityFromDB(1);
+                for( $i = 0; count($cards); $i++ ){
+                   // echo '<option name="'.$cards[$i].name.'">'.$cards[$i].name.'</option>';
+                    echo '<option name="A">A</option>';
+                }
+            ?>
+        </select>
+             
+    </div>
+
     <div id="example" class="handsontable"></div>
     <button id="sendWorkout">SEND WORKOUT</button>
 </div>
