@@ -15,16 +15,23 @@
     </div>
 
     <div id="select_BB_card">
-        <select>
+        <select id="bb_card_value">
             <option name="null">Select a BB CARD</option>
             <?php
             include './BBCard.php';
             $cards = BBCard::getCardsFromDB(1);
             for ($i = 0; $i < count($cards); $i++) {
                 $name = $cards[$i]->getName();
-                echo '<option name="' . $name . '">' . $name . '</option>';
+                echo '<option value="' . $name.';'.$cards[$i]->getNumberOfday() . '">' . $name . '</option>';
             }
             ?>
+        </select>
+    </div>
+    
+    <div id="select_number_of_day">
+        <select>
+            <option>A</option>
+            <option>A</option>
         </select>
     </div>
 

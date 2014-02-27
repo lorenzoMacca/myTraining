@@ -244,6 +244,11 @@ nav{
     margin-top: 30px;
 }
 
+#select_number_of_day{
+    margin-top: 7px;
+    display: none;
+}
+
 
 /*
 * CSS LOGIN
