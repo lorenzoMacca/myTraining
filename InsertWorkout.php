@@ -16,7 +16,7 @@
 
     <div id="select_BB_card">
         <select id="bb_card_value">
-            <option name="null">Select a BB CARD</option>
+            <option value="null">Select a BB CARD</option>
             <?php
             include './BBCard.php';
             $cards = BBCard::getCardsFromDB(1);
