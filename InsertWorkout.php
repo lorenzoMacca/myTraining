@@ -22,14 +22,14 @@
             $cards = BBCard::getCardsFromDB(1);
             for ($i = 0; $i < count($cards); $i++) {
                 $name = $cards[$i]->getName();
-                echo '<option value="' . $name.';'.$cards[$i]->getNumberOfday() . '">' . $name . '</option>';
+                echo '<option value="' . $name . ';' . $cards[$i]->getNumberOfday() . '">' . $name . '</option>';
             }
             ?>
         </select>
     </div>
-    
+
     <div id="select_number_of_day">
-        <select>
+        <select id="select_BB_card_day">
             <option>A</option>
             <option>A</option>
         </select>
@@ -46,7 +46,24 @@
 
 <script>
 
+    $('[id=bb_card_value]').change(function() {
 
+        var valueCardElement = $('[id=bb_card_value]').val();
+
+        if (valueCardElement === "null") {
+            $('[id=select_number_of_day]').hide(100);
+            return;
+        }
+        
+        $numberOfDay = valueCardElement.split(";")[1];
+        
+        /*create an option code*/
+        
+        $('[id=select_BB_card_day]').html("");
+        
+        $('[id=select_number_of_day]').show(100);
+
+    });
 
 <?php
 include './GymTraining.php';
