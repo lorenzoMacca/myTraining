@@ -224,12 +224,26 @@ class GymTraining {
     
     public static function getGymExerciseFromBBCard($bb_card_id, $BB_day){
         DataBaseConnection::getDBConnectionInstance();
-        $query = 'select ge.exsercise_name, ec.series, ec.day
+        $query = 'select ge.exsercise_name, ec.series
                     from mytraining.bb_card bb, mytraining.exercise_card ec, mytraining.gym_exsercise ge
                         where bb.id = ec.BB_card_id
                             and ec.exercise_id = ge.id
                             and bb.id = '.$bb_card_id.'
                             and ec.day = '.$BB_day.';';
+        $result = mysql_query($query);
+        if (!$result) {
+            die('Invalid query: ' . mysql_error());
+        }
+        
+        $gymExercise = array();
+        $i = 0;
+        while ($row = mysql_fetch_row($result)) {
+            $gymExercise[$i] = new GymTraining($row[0], $row[1], 0, 0, 0);
+            $i++;
+        }
+
+        return $gymExercise;
+        
     }
 
     public function getName() {

@@ -49,32 +49,11 @@
 <script>
 
     $('[id=bb_card_value]').change(function() {
-
-        var valueCardElement = $('[id=bb_card_value]').val();
-
-        if (valueCardElement === "null") {
-            $('[id=select_number_of_day]').hide(100);
-            return;
-        }
-        
-        $numberOfDay = valueCardElement.split(";")[1];
-        
-        if($numberOfDay <= 0){
-            alert("THIS BB CARD IS NOT CONFIGURATED!!!");
-            $('[id=select_number_of_day]').hide(100);
-            return;
-        }
-        /*create an option code*/
-        var code = '';
-        
-        for(var $i=0; $i<Number($numberOfDay); $i++){
-            code += '<option>'+($i+1)+'</option>';
-        }
-        
-        $('[id=select_BB_card_day]').html(code);
-        
-        $('[id=select_number_of_day]').show(100);
-
+        loadBBCard();
+    });
+    
+    $('[id=select_BB_card_day]').change(function() {
+        loadExerciseBBCArdFromServer(1,2);
     });
 
 <?php

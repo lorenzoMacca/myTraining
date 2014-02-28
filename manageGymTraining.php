@@ -9,27 +9,42 @@ include './Mail/SendMail.php';
  * and open the template in the editor.
  */
 
-/*CHECK DATA BEFORE TO LAUNCH INSERT PROCEDURE :)*/
-$gymtrainingData = $_POST['gymtrainingData'];
-$dataGym = $_POST['dataGym'];
-$hour = $_POST['hour'];
-$duration = $_POST['duration'];
-$weight = $_POST['weight'];
+/* CHECK DATA BEFORE TO LAUNCH INSERT PROCEDURE :) */
 
-session_start();
-$id = $_SESSION[InitSession::USER_ID];
-session_write_close();
+$req = $_POST['req'];
 
-$activity = [$dataGym, $hour, $duration, $weight, $id];
+if ($req == 'sendGymTrainingData') {
 
-$result = GymTraining::insertGymTraining($activity, $gymtrainingData);
+    $gymtrainingData = $_POST['gymtrainingData'];
+    $dataGym = $_POST['dataGym'];
+    $hour = $_POST['hour'];
+    $duration = $_POST['duration'];
+    $weight = $_POST['weight'];
 
-echo '{"result" :"'.$result.'"}';
+    session_start();
+    $id = $_SESSION[InitSession::USER_ID];
+    session_write_close();
 
-/*send an email to user*/
-SendMail::sendGymTrainingEmail('<lorenzo.cozza@hotmail.com>', 'MYTRAINING GYM ACTIVITY '.$dataGym,  'this email is a test');
+    $activity = [ $dataGym, $hour, $duration, $weight, $id];
 
+    $result = GymTraining::insertGymTraining($activity, $gymtrainingData);
 
+    echo '{"result" :"' . $result . '"}';
 
-
+    /* send an email to user */
+    SendMail:: sendGymTrainingEmail('<lorenzo.cozza@hotmail.com>', 'MYTRAINING GYM ACTIVITY ' . $dataGym, 'this email is a test');
+} else if ($req == 'loadExerciseBBCard') {
+    $idBBCard = $_POST['idBBCard'];
+    $dayBBCard = $_POST['dayBBCard'];
+    $exerciseBBCard = GymTraining::getGymExerciseFromBBCard($idBBCard, $dayBBCard);
+    
+    echo '{ "exercise" : [';
+    for( $i=0;  $i<count($exerciseBBCard); $i++ ){
+        echo $exerciseBBCard[$i];
+        if( $i != count($exerciseBBCard)-1 ){
+            echo ',';
+        }
+    }
+    echo ']}';
+}
 ?>

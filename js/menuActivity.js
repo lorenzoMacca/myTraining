@@ -203,15 +203,15 @@ function getGymTraining(activityId, id, type) {
             code += '</table>';
 
             /*INSERT GOOGLE MAP*/
-            
+
             code += '<div id="map-canvas" style="width: 575px; height: 300px">MAPPA</div>';
-            
-            
+
+
             $("[id=gymTrainingContent" + id + "]").html(code).show(400);
             $('[id=tableRunTraining]').css("border-collapse", "collapse").css("border-color", "#9828c6").css("margin-bottom", "10px");
             initialize();
             calcRoute();
-    } else if (type === 'spi') {
+        } else if (type === 'spi') {
             var code = '<table border="2" id="tableRunTraining" >';
             code += '<tr class="a">';
             code += '<td>TIME</td>';
@@ -222,8 +222,8 @@ function getGymTraining(activityId, id, type) {
             code += '<td>' + gymTriningsJSON.spinningtrainings[0].bpm + '</td>';
             code += '</tr>';
             code += '</table>';
-            
-            
+
+
             $("[id=gymTrainingContent" + id + "]").html(code).show(400);
             $('[id=tableRunTraining]').css("border-collapse", "collapse").css("border-color", "#9828c6").css("margin-bottom", "10px");
         }
@@ -232,8 +232,60 @@ function getGymTraining(activityId, id, type) {
 
 
 function closeTraining(activityId, id, type) {
-     $("[id=gymTrainingContent" + id + "]").html('');
+    $("[id=gymTrainingContent" + id + "]").html('');
 }
+
+function loadBBCard() {
+    var valueCardElement = $('[id=bb_card_value]').val();
+
+    if (valueCardElement === "null") {
+        $('[id=select_number_of_day]').hide(100);
+        return;
+    }
+
+    $idBBCard = valueCardElement.split(";")[2];
+    $numberOfDay = valueCardElement.split(";")[1];
+    $currentDay = 1;
+    
+    
+
+    if ($numberOfDay <= 0) {
+        alert("THIS BB CARD IS NOT CONFIGURATED!!!");
+        $('[id=select_number_of_day]').hide(100);
+        return;
+    }
+    /*create an option code*/
+    var code = '';
+
+    for (var $i = 0; $i < Number($numberOfDay); $i++) {
+        code += '<option>' + ($i + 1) + '</option>';
+    }
+
+    $('[id=select_BB_card_day]').html(code);
+
+    $('[id=select_number_of_day]').show(100);
+    
+    loadExerciseBBCArdFromServer($idBBCard,$currentDay);
+}
+
+function loadExerciseBBCArdFromServer($idBBCard, $dayBBCArd){
+    $.ajax("./manageGymTraining.php", {
+        data: {
+            req: "loadExerciseBBCard",
+            idBBCard :$idBBCard ,
+            dayBBCard: $dayBBCArd
+        },
+        type: "POST"
+    }).done(function(msg) {
+        alert(msg);
+        /*userJSON = JSON.parse(msg);
+        alert(userJSON.result);*/
+
+    });
+    
+}
+
+
 
 function toInsertWorkout() {
 
