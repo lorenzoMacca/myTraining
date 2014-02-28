@@ -15,6 +15,7 @@
     </div>
 
     <div id="select_BB_card">
+        <span>Select BB CARD: </span>
         <select id="bb_card_value">
             <option value="null">Select a BB CARD</option>
             <?php
@@ -22,13 +23,14 @@
             $cards = BBCard::getCardsFromDB(1);
             for ($i = 0; $i < count($cards); $i++) {
                 $name = $cards[$i]->getName();
-                echo '<option value="' . $name . ';' . $cards[$i]->getNumberOfday() . '">' . $name . '</option>';
+                echo '<option value="' . $name . ';' . $cards[$i]->getNumberOfday(). ';'. $cards[$i]->getId() . '">' . $name . '</option>';
             }
             ?>
         </select>
     </div>
 
     <div id="select_number_of_day">
+        <span>Select BB  Day:  </span>
         <select id="select_BB_card_day">
             <option>A</option>
             <option>A</option>
@@ -57,9 +59,19 @@
         
         $numberOfDay = valueCardElement.split(";")[1];
         
+        if($numberOfDay <= 0){
+            alert("THIS BB CARD IS NOT CONFIGURATED!!!");
+            $('[id=select_number_of_day]').hide(100);
+            return;
+        }
         /*create an option code*/
+        var code = '';
         
-        $('[id=select_BB_card_day]').html("");
+        for(var $i=0; $i<Number($numberOfDay); $i++){
+            code += '<option>'+($i+1)+'</option>';
+        }
+        
+        $('[id=select_BB_card_day]').html(code);
         
         $('[id=select_number_of_day]').show(100);
 

@@ -220,6 +220,17 @@ class GymTraining {
         return $gymExercise;
         
     }
+    
+    
+    public static function getGymExerciseFromBBCard($bb_card_id, $BB_day){
+        DataBaseConnection::getDBConnectionInstance();
+        $query = 'select ge.exsercise_name, ec.series, ec.day
+                    from mytraining.bb_card bb, mytraining.exercise_card ec, mytraining.gym_exsercise ge
+                        where bb.id = ec.BB_card_id
+                            and ec.exercise_id = ge.id
+                            and bb.id = '.$bb_card_id.'
+                            and ec.day = '.$BB_day.';';
+    }
 
     public function getName() {
         return $this->name;

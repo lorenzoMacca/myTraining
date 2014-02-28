@@ -19,13 +19,24 @@ class BBCard {
     private $name;
     private $data;
     private $numberOfday;
+    private $id;
     
-    function __construct($name, $data, $numberOfday) {
+    function __construct($name, $data, $numberOfday, $id) {
         $this->name = $name;
         $this->data = $data;
         $this->numberOfday = $numberOfday;
+        $this->id = $id;
     }
     
+    public function getId() {
+        return $this->id;
+    }
+
+    public function setId($id) {
+        $this->id = $id;
+    }
+
+        
     public function getNumberOfday() {
         return $this->numberOfday;
     }
@@ -53,7 +64,7 @@ class BBCard {
 
     public static function getCardsFromDB($userID){
         DataBaseConnection::getDBConnectionInstance();
-        $query = 'SELECT bb.name, date(bb.date_create), number_of_day
+        $query = 'SELECT bb.name, date(bb.date_create), number_of_day, bb.id
                     FROM mytraining.bb_card bb
                         where bb.user_id = "'.$userID.'";';
         $result = mysql_query($query);
@@ -64,7 +75,7 @@ class BBCard {
         $bbCardArray = array();
         $i = 0;
         while($row=mysql_fetch_row($result)){
-            $bbCardArray[$i] = new BBCard($row[0], $row[1], $row[2]);
+            $bbCardArray[$i] = new BBCard($row[0], $row[1], $row[2], $row[3]);
             $i++;
         }
         
