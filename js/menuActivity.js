@@ -246,8 +246,8 @@ function loadBBCard() {
     $idBBCard = valueCardElement.split(";")[2];
     $numberOfDay = valueCardElement.split(";")[1];
     $currentDay = 1;
-    
-    
+
+
 
     if ($numberOfDay <= 0) {
         alert("THIS BB CARD IS NOT CONFIGURATED!!!");
@@ -264,25 +264,44 @@ function loadBBCard() {
     $('[id=select_BB_card_day]').html(code);
 
     $('[id=select_number_of_day]').show(100);
-    
-    loadExerciseBBCArdFromServer($idBBCard,$currentDay);
+
+    loadExerciseBBCArdFromServer($idBBCard, $currentDay);
 }
 
-function loadExerciseBBCArdFromServer($idBBCard, $dayBBCArd){
+function loadExerciseBBCArdFromServer($idBBCard, $dayBBCArd) {
     $.ajax("./manageGymTraining.php", {
         data: {
             req: "loadExerciseBBCard",
-            idBBCard :$idBBCard ,
+            idBBCard: $idBBCard,
             dayBBCard: $dayBBCArd
         },
         type: "POST"
     }).done(function(msg) {
-        alert(msg);
-        /*userJSON = JSON.parse(msg);
-        alert(userJSON.result);*/
-
+        //alert(msg);
+        exerxisesJSON = JSON.parse(msg);
+        //alert(userJSON.result);
+        setGymExerciseToTable(exerxisesJSON.exercise);
     });
-    
+
+}
+
+/**
+ * This method set to excel table the gym exsercises 
+ * @param {type} exercises in ana array of exercise
+ * @returns {undefined} */
+function setGymExerciseToTable(exercises) {
+    //alert(exercises[0].name);
+    var data2 = [];
+    for(var i=0; i<exercises.length; i++){
+        tmp = new Array(exercises[i].name,"","");
+        tmp2 = exercises[i].serie;
+        for(var j=0;j<tmp2; j++){
+            data2.push(tmp);
+        }
+    }
+    //alert(data2);
+
+    $("#example").handsontable("loadData", data2);
 }
 
 

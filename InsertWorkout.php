@@ -73,7 +73,7 @@ echo '];';
     $(document).ready(function() {
 
         var data = [
-            ["", "", "", "", "", ""]
+            ["", "", ""]
         ];
 
         $('#example').handsontable({
@@ -82,6 +82,7 @@ echo '];';
             minSpareRows: 2,
             rowHeaders: true,
             contextMenu: true,
+            colWidths: [180, 60, 65],
             columns: [
                 {
                     type: 'dropdown',
