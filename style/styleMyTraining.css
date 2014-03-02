@@ -362,3 +362,10 @@ nav{
 /*
 * END CSS LOGIN
 */
+
+.textGymTraining{
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #a452c6;
+    padding-left: 10px;
+}

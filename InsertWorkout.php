@@ -4,13 +4,13 @@
 
     <div id="addActivityMetadata">
         <div id="dataInsertWorkout">
-            <span>DATE:</span><input type="text" id="datepicker" size="20"/>
+            <span>DATE:</span><input type="text" class="textGymTraining" id="datepicker" />
         </div>
         <div id="hourInsertWorkout">
-            <span>H:</span><input type="text" id="hourGym" size="15"/>
+            <span>H:</span><input type="text" id="hourGym" class="textGymTraining" />
         </div>
         <div id="durationInsertWorkout">
-            <span>DURATION:</span><input type="number"  id="durationGym" size="15"/>
+            <span>DURATION:</span><input type="number" class="textGymTraining"  id="durationGym" />
         </div>
     </div>
 
@@ -31,7 +31,7 @@
 
     <div id="select_number_of_day">
         <span>Select BB  Day:  </span>
-        <select id="select_BB_card_day">
+        <select id="select_BB_card_day" >
             <option>A</option>
             <option>A</option>
         </select>
@@ -40,6 +40,7 @@
     <div id="example" class="handsontable"></div>
 
     <button id="sendWorkout">SEND WORKOUT</button>
+    <button id="Print">PRINT WORKOUT</button>
 
 
 </div>
@@ -85,7 +86,7 @@ echo '];';
             minSpareRows: 2,
             rowHeaders: true,
             contextMenu: true,
-            colWidths: [175, 80, 80],
+            colWidths: [175, 90, 90],
             columns: [
                 {
                     type: 'dropdown',
