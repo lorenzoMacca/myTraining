@@ -240,6 +240,7 @@ function loadBBCard() {
 
     if (valueCardElement === "null") {
         $('[id=select_number_of_day]').hide(100);
+        clearGymTableExsercise();
         return;
     }
 
@@ -293,10 +294,9 @@ function setGymExerciseToTable(exercises) {
     //alert(exercises[0].name);
     var data2 = [];
     for(var i=0; i<exercises.length; i++){
-        tmp = new Array(exercises[i].name,"","");
         tmp2 = exercises[i].serie;
         for(var j=0;j<tmp2; j++){
-            data2.push(tmp);
+            data2.push(new Array(exercises[i].name,"",""));
         }
     }
     //alert(data2);
@@ -304,6 +304,11 @@ function setGymExerciseToTable(exercises) {
     $("#example").handsontable("loadData", data2);
 }
 
+
+function clearGymTableExsercise(){
+    var data = [];
+    $("#example").handsontable("loadData", data);
+}
 
 
 function toInsertWorkout() {

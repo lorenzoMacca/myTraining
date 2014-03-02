@@ -53,7 +53,10 @@
     });
     
     $('[id=select_BB_card_day]').change(function() {
-        loadExerciseBBCArdFromServer(1,2);
+         bbCardId = $('[id=bb_card_value]').val().split(";")[2];
+         day = $('[id=select_BB_card_day]').val();
+       // alert(valueCardElement+" "+dayCardElement);
+        loadExerciseBBCArdFromServer(bbCardId,day);
     });
 
 <?php
@@ -82,7 +85,7 @@ echo '];';
             minSpareRows: 2,
             rowHeaders: true,
             contextMenu: true,
-            colWidths: [180, 60, 65],
+            colWidths: [175, 80, 80],
             columns: [
                 {
                     type: 'dropdown',
