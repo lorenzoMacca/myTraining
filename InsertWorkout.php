@@ -40,7 +40,10 @@
     <div id="example" class="handsontable"></div>
 
     <button id="sendWorkout">SEND WORKOUT</button>
-    <button id="Print">PRINT WORKOUT</button>
+    <a href="README.md" download="BB Card.xls">
+        <button id="Print">PRINT WORKOUT</button>
+    </a>
+    
 
 
 </div>
