@@ -19,7 +19,7 @@ class PrintData {
      * @param type $data a matrix
      */
     public static function createCSVFile($fileName, $header, $data) {
-        $handle = fopen("tmp/".$fileName, "w");
+        $handle = fopen("../tmp_file_download/".$fileName, "w");
         fwrite($handle, "Testo che vuoi scrivere nel file di testo...");
         fclose($handle);
     }
