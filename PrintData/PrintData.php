@@ -26,10 +26,10 @@ class PrintData {
         }
         $codeCSV .= "\n";
         for($i=0; $i<count($data); $i++){
-            for($j=0; $J<count($data[$i]); $j++){
-                $codeCSV = $codeCSV.$data."\n";
-             }   
-                $codeCSV = $codeCSV.$data."\n";
+            for($j=0; $j<count($data[$i]); $j++){
+                $codeCSV = $codeCSV.$data[$i][$j].";";
+            }   
+            $codeCSV .= "\n";
         }
         fwrite($handle, $codeCSV);
         fclose($handle);

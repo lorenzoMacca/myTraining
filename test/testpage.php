@@ -15,7 +15,7 @@ and open the template in the editor.
         include '../PrintData/PrintData.php';
         
         $header = array('A','B','C');
-        $data = array(array("A","V"),array("X","S"));
+        $data = array(array('A','V'),array('X','S'));
         PrintData::createCSVFile("a123.txt", $header, $data);
         ?>
     </body>
