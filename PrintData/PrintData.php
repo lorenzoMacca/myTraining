@@ -20,7 +20,18 @@ class PrintData {
      */
     public static function createCSVFile($fileName, $header, $data) {
         $handle = fopen("../tmp_file_download/".$fileName, "w");
-        fwrite($handle, "Testo che vuoi scrivere nel file di testo...");
+        $codeCSV = '';
+        for($i=0; $i<count($header); $i++){
+            $codeCSV = $codeCSV.$header[$i].';';
+        }
+        $codeCSV .= "\n";
+        for($i=0; $i<count($data); $i++){
+            for($j=0; $J<count($data[$i]); $j++){
+                $codeCSV = $codeCSV.$data."\n";
+             }   
+                $codeCSV = $codeCSV.$data."\n";
+        }
+        fwrite($handle, $codeCSV);
         fclose($handle);
     }
 

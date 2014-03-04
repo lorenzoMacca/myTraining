@@ -13,7 +13,10 @@ and open the template in the editor.
         <?php
         // put your code here
         include '../PrintData/PrintData.php';
-        PrintData::createCSVFile("a1.txt", "", "");
+        
+        $header = array('A','B','C');
+        $data = array(array("A","V"),array("X","S"));
+        PrintData::createCSVFile("a123.txt", $header, $data);
         ?>
     </body>
 </html>
