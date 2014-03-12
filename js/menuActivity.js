@@ -231,6 +231,23 @@ function getGymTraining(activityId, id, type) {
 }
 
 
+function printCard(idCard, day){
+    $.ajax("./manageGymTraining.php", {
+        data: {
+            req: "printCard",
+            idCard: idCard,
+            day: day
+        },
+        type: "POST"
+    }).done(function(msg) {
+        alert(msg);
+        //exerxisesJSON = JSON.parse(msg);
+        //alert(userJSON.result);
+       
+    });
+}
+
+
 function closeTraining(activityId, id, type) {
     $("[id=gymTrainingContent" + id + "]").html('');
 }

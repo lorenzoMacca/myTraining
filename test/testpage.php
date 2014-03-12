@@ -16,7 +16,7 @@ and open the template in the editor.
         
         $header = array('A','B','C');
         $data = array(array('A','V'),array('X','S'));
-        PrintData::createCSVFile("a123.txt", $header, $data);
+        PrintData::createCSVFile("a1234.txt", $header, $data);
         ?>
     </body>
 </html>

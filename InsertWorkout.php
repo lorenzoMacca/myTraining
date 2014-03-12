@@ -1,4 +1,6 @@
-
+<?php 
+    include_once './PrintData/PrintData.php';
+?>
 
 <div id="insertWorkoutContainer">
 
@@ -40,8 +42,8 @@
     <div id="example" class="handsontable"></div>
 
     <button id="sendWorkout">SEND WORKOUT</button>
-    <a href="README.md" download="BB Card.xls">
-        <button id="Print">PRINT WORKOUT</button>
+    <a href="#" download="">
+        <button id="PrintCard">PRINT WORKOUT</button>
     </a>
     
 
@@ -51,6 +53,11 @@
 
 
 <script>
+    
+    
+    $('[id=PrintCard]').click(function (){
+        
+    });
 
     $('[id=bb_card_value]').change(function() {
         loadBBCard();
