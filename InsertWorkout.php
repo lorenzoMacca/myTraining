@@ -1,6 +1,4 @@
-<?php 
-    include_once './PrintData/PrintData.php';
-?>
+
 
 <div id="insertWorkoutContainer">
 
