@@ -1,0 +1,35 @@
+.loginForm{
+	width:300px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.MT_signInButton{
+	width:300px;
+}
+
+.MT_border_bottom{
+	border-bottom-style: solid;
+    border-bottom-width: 5px;
+	border-bottom-color:white;
+}
+
+.MT_border_bottom_default{
+	border-bottom-style: solid;
+    border-bottom-width: 5px;
+	border-bottom-color:white;
+}
+
+.MT_container_wrapper_left{
+	width:80%;
+	float:left;
+	padding-left:5em;
+}
+
+
+.MT_container_wrapper_right{
+	width:20%;
+	float:right;
+	padding-right:5em;
+}

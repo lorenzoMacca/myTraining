@@ -7,7 +7,6 @@ var STATE = 'LOGIN';
 
 
 function doLogin(username, password) {
-    //alert(password);
     $.ajax("doLogin.php", {
         data: {
             req: "login",
@@ -24,7 +23,11 @@ function doLogin(username, password) {
         } else {
             $("[id=center]").append("<div>ERROR IN LOGIN, CHECK USERNAME OR PASSWORD</div>");
         }
-    });
+    }) .fail(function() {
+		alert( "error" );
+	}).always(function() {
+		//alert( "complete" );
+	});
 }
 
 function sendSpinningTrainingdataToServer(dataGym, hour, duration, bpm, time, weather) {
