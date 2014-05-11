@@ -16,7 +16,6 @@ function doLogin(username, password) {
         },
         type: "GET"
     }).done(function(msg) {
-        //alert(msg);
         userJSON = JSON.parse(msg);
 
         if (userJSON.connect === 'OK') {

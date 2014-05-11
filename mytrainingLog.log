@@ -270,3 +270,363 @@
 [ DATA:2014-1-26 22:17:4 - USER:system - ID:-1 ] : initialize session variable to initialvalue
 [ DATA:2014-1-26 22:18:15 - USER:system - ID:-1 ] : construct initSession
 [ DATA:2014-1-26 22:18:15 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-1-26 22:21:15 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-1-26 22:21:15 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-1 8:55:2 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-1 8:55:2 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-5 7:41:26 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-5 7:41:26 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-5 20:49:52 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-5 20:49:52 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-8 10:35:8 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-8 10:35:8 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-10 20:2:3 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-10 20:2:4 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-10 20:3:29 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-10 20:3:29 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-10 20:4:41 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-10 20:4:41 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-10 20:17:15 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-10 20:17:15 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-11 7:23:10 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-11 7:23:11 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-11 7:23:32 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-11 7:23:32 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-12 19:54:57 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-12 19:54:58 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-15 9:9:54 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-15 9:9:55 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-15 13:30:33 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-15 13:30:33 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 9:47:42 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 9:47:42 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 9:58:5 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 9:58:5 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 9:58:30 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 9:58:30 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 10:12:5 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 10:12:5 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 10:12:54 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 10:12:54 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 10:14:31 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 10:14:31 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 10:19:41 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 10:19:41 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 10:20:34 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 10:20:34 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 11:9:6 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 11:9:6 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 11:10:38 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 11:10:38 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 11:16:22 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 11:16:22 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 11:57:24 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 11:57:24 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 12:3:44 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 12:3:44 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 12:5:5 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 12:5:5 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 12:6:9 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 12:6:9 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 12:7:28 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 12:7:29 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 12:8:41 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 12:8:41 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 12:10:16 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 12:10:16 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-16 12:11:0 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-16 12:11:0 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-17 20:0:50 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-17 20:0:50 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-17 20:1:28 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-17 20:1:28 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-18 20:1:59 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-18 20:1:59 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-18 20:55:27 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-18 20:55:27 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-18 20:56:1 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-18 20:56:1 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-21 20:37:21 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-21 20:37:21 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-21 20:37:57 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-21 20:37:57 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-21 20:40:23 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-21 20:40:23 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-23 10:23:24 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-23 10:23:24 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-23 10:41:37 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-23 10:41:37 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-24 15:56:45 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-24 15:56:45 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 7:49:47 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 7:49:47 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:37:0 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:37:0 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:37:3 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:37:3 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:44:47 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:44:47 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:44:51 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:44:51 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:46:18 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:46:18 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:47:7 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:47:7 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:49:32 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:49:32 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:50:12 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:50:12 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:50:16 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:50:16 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:50:50 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:50:50 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:52:9 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:52:9 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:53:7 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:53:7 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:53:45 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:53:45 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:55:6 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:55:6 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 19:55:13 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 19:55:13 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:7:11 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:7:11 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:8:24 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:8:24 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:9:25 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:9:25 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:12:30 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:12:30 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:13:1 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:13:1 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:15:16 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:15:16 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:16:27 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:16:27 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:17:11 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:17:11 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:18:49 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:18:49 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:20:0 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:20:0 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:20:46 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:20:46 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-26 20:21:46 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-26 20:21:46 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-28 7:7:33 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-28 7:7:33 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-28 21:56:7 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-28 21:56:7 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-28 21:56:21 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-28 21:56:21 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-28 21:58:15 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-28 21:58:15 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-28 22:1:50 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-28 22:1:50 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-28 22:5:0 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-28 22:5:0 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-28 22:7:31 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-28 22:7:31 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-28 22:20:54 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-28 22:20:54 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-2-28 22:21:28 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-2-28 22:21:28 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 9:52:39 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 9:52:39 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 9:52:45 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 9:52:45 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:2:13 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:2:13 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:3:53 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:3:53 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:6:28 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:6:28 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:6:57 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:6:57 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:7:29 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:7:29 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:7:52 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:7:52 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:9:18 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:9:18 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:15:40 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:15:40 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:23:55 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:23:55 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:30:41 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:30:41 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:35:47 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:35:47 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:36:42 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:36:42 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:38:11 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:38:11 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:41:15 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:41:15 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:47:12 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:47:12 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:49:58 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:49:58 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:54:0 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:54:0 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:55:11 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:55:11 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:56:15 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:56:15 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 10:59:24 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 10:59:24 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 11:0:9 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 11:0:9 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 11:3:13 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 11:3:13 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 11:15:31 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 11:15:31 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 11:16:2 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 11:16:2 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 11:17:7 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 11:17:7 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 11:18:26 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 11:18:26 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 11:19:30 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 11:19:30 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 11:21:25 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 11:21:25 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 14:25:13 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 14:25:13 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 15:13:38 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 15:13:38 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 15:14:2 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 15:14:2 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 15:15:40 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 15:15:40 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 15:16:22 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 15:16:22 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-2 15:17:7 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-2 15:17:7 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-3 21:23:31 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-3 21:23:31 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-4 21:29:22 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-4 21:29:22 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-8 9:35:26 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-8 9:35:26 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-10 20:41:33 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-10 20:41:34 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-10 20:47:22 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-10 20:47:22 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-12 6:25:44 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-12 6:25:44 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-14 8:18:17 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-14 8:18:17 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-14 19:42:13 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-14 19:42:13 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:14:35 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:14:35 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:16:42 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:16:42 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:16:54 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:16:54 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:18:36 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:18:36 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:25:41 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:25:41 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:32:58 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:32:58 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:33:50 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:33:50 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:34:46 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:34:46 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:36:8 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:36:8 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:37:13 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:37:13 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 14:45:41 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 14:45:41 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-16 15:16:31 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-16 15:16:31 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-17 20:47:25 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-17 20:47:25 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-18 20:26:6 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-18 20:26:6 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-21 7:9:48 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-21 7:9:48 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-25 8:19:17 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-25 8:19:17 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-25 8:19:23 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-25 8:19:23 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-25 8:19:31 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-25 8:19:31 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-25 8:21:20 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-25 8:21:20 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-25 8:21:24 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-25 8:21:24 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-25 20:45:55 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-25 20:45:55 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-3-28 20:48:58 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-3-28 20:48:58 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-1 7:21:24 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-1 7:21:25 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-2 7:31:14 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-2 7:31:17 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-8 22:50:40 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-8 22:50:40 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-8 22:50:40 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-8 22:50:40 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-10 21:11:44 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-10 21:11:44 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-10 21:11:44 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-10 21:11:44 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-10 21:21:36 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-10 21:21:36 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-13 9:19:31 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-13 9:19:31 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-13 9:23:46 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-13 9:23:46 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-14 20:50:33 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-14 20:50:33 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-15 17:42:23 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-15 17:42:23 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-17 17:40:25 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-17 17:40:25 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-17 17:40:25 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-17 17:40:25 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-17 17:45:49 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-17 17:45:49 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-18 9:17:2 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-18 9:17:2 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-19 9:52:26 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-19 9:52:26 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-20 9:33:38 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-20 9:33:38 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-21 8:14:10 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-21 8:14:10 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-22 19:24:28 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-22 19:24:28 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-28 8:1:35 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-28 8:1:35 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-4-28 19:56:3 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-4-28 19:56:3 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-5 22:34:12 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-5 22:34:12 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-5 22:36:51 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-5 22:36:51 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-10 10:38:42 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-10 10:38:42 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-11 14:39:6 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-11 14:39:7 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-11 14:40:5 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-11 14:40:5 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-11 14:42:2 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-11 14:42:2 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-11 14:45:3 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-11 14:45:3 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-11 14:46:20 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-11 14:46:20 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-11 14:47:13 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-11 14:47:13 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-11 14:49:9 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-11 14:49:9 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-11 14:50:15 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-11 14:50:15 - USER:system - ID:-1 ] : initialize session variable to initialvalue
+[ DATA:2014-5-11 14:50:41 - USER:system - ID:-1 ] : construct initSession
+[ DATA:2014-5-11 14:50:41 - USER:system - ID:-1 ] : initialize session variable to initialvalue

@@ -33,7 +33,7 @@ class DataBaseConnection {
     public function connection(){
         $dbConfig = new LoadDbConfig();
         //$this->connection = mysql_connect('localhost:/var/run/mysqld/mysqld.sock', 'root', 'asus');
-        $this->connection = mysql_connect($dbConfig->getSystem(), $dbConfig->getUser(), $dbConfig->getPassword());
+        $this->connection = mysql_connect($dbConfig->getSystem(), $dbConfig->getUser(), "");
         if (!$this->connection) {
             die('Could not connect: ' . mysql_error());
         }
