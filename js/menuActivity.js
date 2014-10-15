@@ -15,6 +15,7 @@ function doLogin(username, password) {
         },
         type: "GET"
     }).done(function(msg) {
+                alert(msg);
         userJSON = JSON.parse(msg);
 
         if (userJSON.connect === 'OK') {
@@ -23,7 +24,7 @@ function doLogin(username, password) {
         } else {
             $("[id=center]").append("<div>ERROR IN LOGIN, CHECK USERNAME OR PASSWORD</div>");
         }
-    }) .fail(function() {
+    }) .fail(function(msg) {
 		alert( "error" );
 	}).always(function() {
 		//alert( "complete" );
