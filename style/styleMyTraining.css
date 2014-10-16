@@ -6,6 +6,21 @@
         Purpose of the stylesheet follows.
 */
 
+
+/**************************/
+/*********NEW PANEL********/
+
+.MT_GYM_FORM_FIELD{
+	padding: 10px;
+}
+
+.MT_GYM_FORM_BUTTON{
+	width: 100px;
+	padding-right: 5px;
+}
+
+/**************************/
+
 root { 
     display: block;
 }
