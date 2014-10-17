@@ -13,12 +13,20 @@ Released   : 20131223
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>My Training</title>
         <meta name="keywords" content="" />
         <meta name="description" content="" />
+        
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js" ></script>
+        
+        <!-- LIB EXCEL STYLE -->
+        <script src="http://handsontable.com/lib/jquery.min.js"></script>
+        <script src="http://handsontable.com/dist/jquery.handsontable.full.js"></script>
+        <link rel="stylesheet" media="screen" href="http://handsontable.com/dist/jquery.handsontable.full.css"/>
+        <link rel="stylesheet" media="screen" href="http://handsontable.com/demo/css/samples.css"/>
+        <!-- END LIB EXCEL STYLE -->
 
         <!-- Bootstrap -->
         <link href="style/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
@@ -37,7 +45,7 @@ Released   : 20131223
         <link rel="stylesheet" href="style/styleMenu.css" />
 
         <script src="js/menuActivity.js" ></script>
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js" ></script>
+        
         <link href="style/homepage.css" rel="stylesheet" type="text/css" media="all" />
 
         <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->

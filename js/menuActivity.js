@@ -26,9 +26,10 @@ function doLogin(username, password) {
         }
     }) .fail(function(msg) {
 		alert( "error" );
-		 $("[id=center]").load("./panels/gymForm.php");
+		$("[id=center]").load("./gymForm.php");
 	}).always(function() {
 		//alert( "complete" );
+                $("[id=center]").load("./gymForm.php");
 	});
 }
 
